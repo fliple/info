@@ -15,6 +15,8 @@ import FormattedName from '../FormattedName'
 import QuestionHelper from '../QuestionHelper'
 import { TYPE } from '../../Theme'
 
+import { PAIR_BLACKLIST } from '../../constants'
+
 dayjs.extend(utc)
 
 const PageButtons = styled.div`
@@ -186,6 +188,7 @@ function PairList({ pairs, color, disbaleLinks, maxItems = 10 }) {
   const pairList =
     pairs &&
     Object.keys(pairs)
+      .filter(address => !PAIR_BLACKLIST.includes(address))
       .sort((addressA, addressB) => {
         const pairA = pairs[addressA]
         const pairB = pairs[addressB]

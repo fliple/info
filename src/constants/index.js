@@ -5,8 +5,6 @@ export const BUNDLE_ID = '1'
 export const timeframeOptions = {
   WEEK: '1 week',
   MONTH: '1 month',
-  // THREE_MONTHS: '3 months',
-  // YEAR: '1 year',
   ALL_TIME: 'All time',
 }
 
@@ -16,7 +14,11 @@ export const SUPPORTED_LIST_URLS__NO_ENS = [
 ]
 
 // hide from overview list
-export const OVERVIEW_TOKEN_BLACKLIST = []
+export const OVERVIEW_TOKEN_BLACKLIST = [
+  '0xd883295149f5656f49d56c3bb12506cdf3672aab'
+]
 
 // pair blacklist
-export const PAIR_BLACKLIST = []
+export const PAIR_BLACKLIST = [
+  '0x17b5dd90e7f52f03fb83152961ad42ec4dc83104'
+]
