@@ -10,7 +10,7 @@ export const timeframeOptions = {
 
 // token list urls to fetch tokens from - use for warnings on tokens and pairs
 export const SUPPORTED_LIST_URLS__NO_ENS = [
-  'https://fliple.org/tokens.json',
+  'https://raw.githubusercontent.com/fliple/tokens/master/tokens.json',
 ]
 
 // hide from overview list
