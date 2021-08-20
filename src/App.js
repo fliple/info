@@ -110,7 +110,7 @@ function App() {
         {showWarning && (
           <WarningWrapper>
             <WarningBanner>
-              {`The data on this site has only synced to Binance Smart Chain block ${latestBlock} (out of ${headBlock}). Please check back soon.`}
+              {`The data on this site has only synced to POA Network block ${latestBlock} (out of ${headBlock}). Please check back soon.`}
             </WarningBanner>
           </WarningWrapper>
         )}
