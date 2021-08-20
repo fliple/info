@@ -4,7 +4,7 @@ import { HttpLink } from 'apollo-link-http'
 
 export const client = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://api.thegraph.com/subgraphs/name/fliple/exchange',
+    uri: 'https://api.studio.thegraph.com/query/4453/fliple/0.0.2',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
